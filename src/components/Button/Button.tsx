@@ -6,6 +6,10 @@ interface Props {
 
 };
 
+export const ChildrenButton = ({ label }: Pick<Props, "label">) => {
+    return (<div>{label}</div>)
+}
+
 export const Button = ({label, parentMethod}: Props) => {
 
     return (
